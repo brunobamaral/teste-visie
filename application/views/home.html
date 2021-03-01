@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>Teste Visie: Fullstack Python</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="pure-min.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<table id="table" class="pure-table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Nome</th>
+							<th>Admissão</th>
+							<th>Ação</th>
+						</tr>
+					</thead>
+					<tbody>
+						%for x in range(0,len(fname)):
+							% include("table_row")
+						% end
+					</tbody>
+				</table>
+			
+			<form class="pure-form add-form">
+				<fieldset>
+					<legend>Adicionar novo registro.</legend>
+					<input type="text" id="nome" placeholder="Seu nome" /><br />
+					<input type="date" id="datad" placeholder="Data de Admissão" /><br />
+					<button type="submit" class="pure-button pure-button-primary add_user">
+						<strong>Adicionar</strong>
+					</button>
+				</fieldset>
+			</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="zepto.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+form fieldset input{ width: 40%;margin-bottom:5px;min-width:450px; }
+.container{ display:flex;flex-direction: column;align-items: center; }
+.icon-del{ width:15%; }
+.del_user{ width:70%;background-color:red;color:white;border-radius:5px; }
+.add-form{ width:70%;min-width:450px; }
+.add_user{ width:30%;color:border-radius:8px }
+#wrapper{ margin-left:12px; }
+#table{ width:70%;margin-top:10px;margin-bottom:15px;min-width:460px;max-width: 500px; }
+
+
+@media only screen and (min-width: 768px){
+	#wrapper{ margin:0 auto;text-align:center; }
+}
